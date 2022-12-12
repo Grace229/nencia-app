@@ -1,0 +1,48 @@
+.fashion {
+  display: flex;
+  width: 100%;
+  &__left,
+  &__right {
+    width: 50%;
+  }
+  &__left {
+    &__image {
+      height: 480px;
+      width: 490px;
+      position: absolute;
+      border-radius: 10px;
+      left: 3rem;
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 3rem;
+    &__heading > p {
+      background-color: #FFD580;
+      font-size: 2rem;
+      padding: 1rem;
+      width: 31%;
+      border-radius: 30px;
+    }
+    &__header > h1 {
+      font-family: Gilroy-Medium;
+      font-weight: 500;
+      font-size: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__text > h2 {
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      padding-bottom: 0;
+      font-family: "Poppins", sans-serif;
+      color: #627680;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
