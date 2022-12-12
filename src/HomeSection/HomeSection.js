@@ -4,6 +4,7 @@ import Events from '../components/Events/Events';
 import Home from "../components/Home/Home";
 import FashionStars from '../components/FashionStars/FashionStars';
 import Cta from '../components/cta/Cta';
+import Footer from '../components/footer/Footer';
 
 
 const HomeSection = () => {
@@ -14,6 +15,7 @@ const HomeSection = () => {
         <Events />
         <FashionStars /> 
         <Cta />
+        <Footer />
     </div>
   )
 }

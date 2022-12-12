@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  width: 100%;
+  background: #1da1f2;
+  padding: 80px;
+  height: 50vh;
+  border-top: 2px solid #e9ecee;
+  border-bottom: 2px solid #e9ecee;
+  flex-direction: column;
+  &__container {
+    display: flex;
+    width: 100%;
+    &__info,
+    &__links,
+    &__company,
+    &__social {
+      width: 25%;
+    }
+
+    &__info > h3 {
+      font-size: 24px;
+      margin: 0 0 20px 0;
+      padding: 2px 0 2px 0;
+      line-height: 1;
+      font-weight: 700;
+      color: #fff;
+    }
+    &__info > p {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 0;
+      font-family: "Raleway", sans-serif;
+      color: #fff;
+    }
+    &__links > h4 {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 0;
+      font-family: "Raleway", sans-serif;
+      color: #fff;
+    }
+  }
+}
