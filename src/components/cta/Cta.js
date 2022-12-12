@@ -1,7 +1,7 @@
 import React from "react";
 import "./Cta.scss";
-import appstore from "../assets/img/appstore.png";
-import playstore from "../assets/img/playstore.png";
+import appstore from "../../assets/img/appstore.png";
+import playstore from "../../assets/img/playstore.png";
 import { Link } from "react-router-dom";
 
 const Cta = () => {

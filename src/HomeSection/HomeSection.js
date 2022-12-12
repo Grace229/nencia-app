@@ -3,7 +3,8 @@ import Business from '../components/Business/Business';
 import Events from '../components/Events/Events';
 import Home from "../components/Home/Home";
 import FashionStars from '../components/FashionStars/FashionStars';
-import Cta from '../cta/Cta';
+import Cta from '../components/cta/Cta';
+
 
 const HomeSection = () => {
   return (
