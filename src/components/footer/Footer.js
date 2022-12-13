@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaSkype, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Footer.scss";
 
@@ -16,17 +17,17 @@ const Footer = () => {
         </div>
         <div className="footer__container__links">
           <h4>Useful Links</h4>
-          <div className="footer__container__links__unordered">
-            <div className="footer__container__links__unordered__list">
-              <Link className="footer__container__links__unordered__list__link" href="#">Home</Link>
-            </div>
-            <div>
-              <Link className="footer__container__links__unordered__list__link" href="#">About us</Link>
-            </div>
-            <div>
-              <Link className="footer__container__links__unordered__list__link" href="#">Careers</Link>
-            </div>
-          </div>
+          <ul className="footer__container__links__unordered">
+            <li>
+              <Link href="#">Home</Link>
+            </li>
+            <li>
+              <Link href="#">About us</Link>
+            </li>
+            <li>
+              <Link href="#">Careers</Link>
+            </li>
+          </ul>
         </div>
         <div className="footer__container__company">
           <h4>Company</h4>
@@ -46,7 +47,13 @@ const Footer = () => {
         </div>
         <div className="footer__container__social">
           <h4>Follow us</h4>
-          <div className="footer__container__social__media"></div>
+          <div className="footer__container__social__media">
+            <Link><FaTwitter /></Link>
+            <Link><FaFacebookF /></Link>
+            <Link><FaInstagram /></Link>
+            <Link><FaSkype /></Link>
+            <Link><FaLinkedinIn /></Link>
+          </div>
         </div>
       </div>
       <div className="footer__copyright">

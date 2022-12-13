@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   background: #1da1f2;
-  padding: 80px;
+  padding: 90px;
   height: 50vh;
   border-top: 2px solid #e9ecee;
   border-bottom: 2px solid #e9ecee;
@@ -15,6 +15,7 @@
     &__company,
     &__social {
       width: 25%;
+      margin-left: 30px;
     }
 
     &__info > h3 {
@@ -27,7 +28,7 @@
     }
     &__info > p {
       font-size: 14px;
-      line-height: 24px;
+      line-height: 34px;
       margin-bottom: 0;
       font-family: "Raleway", sans-serif;
       color: #fff;
@@ -39,5 +40,73 @@
       font-family: "Raleway", sans-serif;
       color: #fff;
     }
+    &__links {
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        li > a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: 300;
+        }
+      }
+    }
+    &__company > h4 {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 0;
+      font-family: "Raleway", sans-serif;
+      color: #fff;
+    }
+    &__company {
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        li > a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: 300;
+        }
+      }
+    }
+    &__social {
+      h4 {
+        color: #fff;
+      }
+      &__media {
+        display: flex;
+        gap: 0.3rem;
+        padding-top: 30px;
+
+        a {
+          font-size: 18px;
+          background: #e9ecee;
+          color: #1da1f2;
+          line-height: 1;
+          padding: 8px 0;
+          margin-right: 4px;
+          border-radius: 50%;
+          text-align: center;
+          width: 36px;
+          height: 36px;
+          transition: 0.3s;
+        }
+        a:hover {
+          background: #009cea;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__copyright {
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 15px;
   }
 }
