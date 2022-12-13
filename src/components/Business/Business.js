@@ -53,7 +53,7 @@ const Business = () => {
             about measurements, price and logistics, we have taken care of that
             for you to help you move from product awareness to transactions.
           </h2>
-        </div>
+        </div> 
       </div>
     </div>
   ); 

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import leftArrow from "../../assets/img/leftArrow.png";
 import { homeImageData } from "./data/home";
 import { motion } from "framer-motion";
+import Marquee from "react-fast-marquee";
 
 const Home = () => {
   const transition = { type: "spring", duration: 3 };
@@ -15,7 +16,7 @@ const Home = () => {
     <main>
       <div className="container">
         <div className="container__left">
-          <div className="container__left__name"> 
+          <div className="container__left__name">
             <span>All the</span>
             <span>COLOURS</span>
             <p>of Africa</p>
@@ -27,10 +28,10 @@ const Home = () => {
           </div>
           <div className="container__left__app">
             <Link>
-              <img src={appstore} alt="" style={{ width: "140px" }} />
+              <img src={appstore} alt="" style={{ width: "140px"}}  className="waving-left"/>
             </Link>
             <Link>
-              <img src={playstore} alt="" style={{ width: "140px" }} />
+              <img src={playstore} alt="" style={{ width: "140px" }} className="waving"/>
             </Link>
           </div>
         </div>
@@ -76,6 +77,35 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <section className="marquee-section">
+        <Marquee speed={60} gradient={false} pauseOnHover>
+          <div className="marquee-container">
+            <div className="marquee3k">
+              <h4>
+                {" "}
+                <span>Nencia</span>
+                <span>Business</span>
+                <span>Fashion</span>
+                <span>Event</span>{" "}
+              </h4>
+              <h4>
+                {" "}
+                <span>Nencia</span>
+                <span>Business</span>
+                <span>Fashion</span>
+                <span>Event</span>{" "}
+              </h4>
+              <h4>
+                {" "}
+                <span>Nencia</span>
+                <span>Business</span>
+                <span>Fashion</span>
+                <span>Event</span>{" "}
+              </h4>
+            </div>
+          </div>
+        </Marquee>
+      </section>
     </main>
   );
 };
