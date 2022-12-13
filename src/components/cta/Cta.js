@@ -3,13 +3,25 @@ import "./Cta.scss";
 import appstore from "../../assets/img/appstore.png";
 import playstore from "../../assets/img/playstore.png";
 import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 
 const Cta = () => {
   return (
     <div className="cta">
       <div className="cta__left">
         <div className="cta__left__heading">
-          <h3>Get the nencia App</h3>
+          <h3>
+          <Typewriter 
+            options={{
+              autoStart: true,
+              loop: true,
+              delay: 40,
+              strings: [
+                "Get the nencia App",
+              ],
+            }}
+          />
+          </h3>
         </div>
         <div className="cta__left__header">
           <p>

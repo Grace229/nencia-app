@@ -12,6 +12,7 @@ const Home = () => {
   const transition = { type: "spring", duration: 3 };
   const [selected, setSelected] = useState(0);
   const tLength = homeImageData.length;
+  
   return (
     <main>
       <div className="container">

@@ -12,10 +12,10 @@ const HomeSection = () => {
     <div>
         <Home />
         <Business />
-        {/* <Events /> */}
-        {/* <FashionStars />  */}
-        {/* <Cta /> */}
-        {/* <Footer /> */}
+        <Events />
+        <FashionStars /> 
+        <Cta />
+        <Footer />
     </div>
   )
 }
