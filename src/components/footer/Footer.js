@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer__container__info">
           <h3>Nencia</h3>
           <p>
-            <strong>Phone:</strong> +234-9025977376 <br />
+            <strong>Phone:</strong> 09025977376 <br />
             <strong>Email:</strong> care@nencia.com
             <br />
           </p>
@@ -61,7 +61,7 @@ const Footer = () => {
         <strong>
           <span>Nencia</span>
         </strong>
-        . All Rights Reserved
+         All Rights Reserved
       </div>
     </div>
   );

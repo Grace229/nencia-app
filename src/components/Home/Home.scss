@@ -10,7 +10,7 @@
     flex: 1;
     flex-direction: column;
     gap: 2rem;
-      max-width: 100%;
+    max-width: 100%;
 
     &__name {
       display: flex;
@@ -114,19 +114,19 @@
 
 .marquee3k {
   background-color: transparent;
-  height: 85px;
+  height: 85px; 
   display: flex;
   align-items: center;
 }
 
 .marquee3k h4 {
-  color:#1da1f2;
+  color: #1da1f2;
   font-size: 23px;
 }
 .marquee3k h4 span {
   margin: 0 30px;
 }
-.waving{
+.waving {
   webkit-animation-duration: 1.2s;
   animation-duration: 1.2s;
   -webkit-animation-iteration-count: infinite;
@@ -138,11 +138,14 @@
   margin-left: 4px;
 }
 
-@media screen and (min-width: 280px) and (max-width : 1080px) {
+@media screen and (min-width: 280px) and (max-width: 1080px) {
   .container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    &__left,
+    &__right {
+      width: 100%;
+    }
     &__left {
       margin-top: -39px;
       margin-left: -60px;
@@ -177,6 +180,9 @@
         }
       }
     }
+  }
+  .marquee-section{
+   display: none;
   }
 }
 

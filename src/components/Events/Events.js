@@ -4,7 +4,7 @@ import { eventImageData } from "./EventsData";
 
 const Events = () => {
   const [selected] = useState(0);
-
+ 
   return (
     <div className="container">
       <div className="container__left">

@@ -12,7 +12,7 @@ const FashionStars = () => {
           src={fashionStarImageData[selected].image}
           alt=""
           className="fashion__left__image"
-        />
+        /> 
       </div>
       <div className="fashion__right">
         <div className="fashion__right__heading">

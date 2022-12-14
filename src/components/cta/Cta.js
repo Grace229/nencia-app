@@ -31,11 +31,11 @@ const Cta = () => {
         </div>
       </div>
       <div className="cta__right">
-        <Link>
-          <img src={appstore} alt="" style={{ width: "200px" }} />
+        <Link className="cta__right__link">
+          <img src={appstore} alt="" style={{ width: "200px" }} className="cta__right__link__image"/>
         </Link>
-        <Link>
-          <img src={playstore} alt="" style={{ width: "200px" }} />
+        <Link className="cta__right__link">
+          <img src={playstore} alt="" style={{ width: "200px" }} className="cta__right__link__image"/>
         </Link>
       </div>
     </div>

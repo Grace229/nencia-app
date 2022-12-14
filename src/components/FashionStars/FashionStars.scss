@@ -20,7 +20,7 @@
     flex: 1;
     gap: 3rem;
     &__heading > p {
-      background-color: #FFD580;
+      background-color: #ffd580;
       font-size: 2rem;
       padding: 1rem;
       width: 31%;
@@ -43,6 +43,49 @@
       color: #627680;
       justify-content: center;
       align-items: center;
+    }
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .fashion {
+    display: flex;
+    flex-direction: column;
+    &__left,
+    &__right {
+      width: 100%;
+      height: 100%;
+    }
+    &__left {
+      &__image {
+        width: 80%;
+        margin-top: 33rem;
+      }
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      margin-top: 66rem;
+      &__heading > p {
+        font-size: 19px;
+        margin-left: 40px;
+        padding: 1rem;
+        width: 37%;
+      }
+      &__header > h1 {
+        font-family: Gilroy-Medium;
+        font-weight: 500;
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        margin-left: 40px;
+      }
+      &__text > h2 {
+        margin-left: 40px;
+        font-size: 20px;
+      }
     }
   }
 }
