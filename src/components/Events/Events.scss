@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  margin-bottom: 12rem;
   gap: 4rem;
   &__left {
     display: flex;
@@ -81,7 +80,7 @@
         font-size: 32px;
         margin-left: 40px;
       }
-      &__text > h2 {
+      &__text > h2 { 
         margin-left: 40px;
         font-size: 20px;
       }

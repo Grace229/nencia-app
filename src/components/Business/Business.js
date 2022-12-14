@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import "./Business.scss";
 import { businessImageData } from "./BusinessData";
-import leftArrow from "../../assets/img/leftArrow.png";
 import Typewriter from "typewriter-effect";
 
 const Business = () => {
-  const [selected, setSelected] = useState(0);
-  const tLength = businessImageData.length;
+  const [selected] = useState(0);
+
   return (
     <div className="container">
       <div className="container__left">
@@ -16,28 +15,6 @@ const Business = () => {
           alt=""
           className="container__left__image"
         />
-        {/* <div className="arrows">
-          <img
-            onClick={() => {
-              selected === 0
-                ? setSelected(tLength - 1)
-                : setSelected((prev) => prev - 1);
-            }}
-            src={leftArrow}
-            alt="left-arrow"
-            className="arrows__left"
-          />
-          <img
-            src={leftArrow}
-            onClick={() => {
-              selected === tLength - 1
-                ? setSelected(0)
-                : setSelected((prev) => prev + 1);
-            }}
-            alt="right-arrow"
-            className="arrows__right"
-          />
-        </div> */}
       </div>
       <div className="container__right">
         <div className="container__right__heading">

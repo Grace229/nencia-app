@@ -9,25 +9,6 @@
       border-radius: 10px;
       left: 3rem;
     }
-    .arrows {
-      display: flex;
-      gap: 1.5rem;
-      &__left {
-        position: absolute;
-        top: 15rem;
-        left: 3.5rem;
-        opacity: 1;
-        cursor: pointer;
-      }
-      &__right {
-        position: absolute;
-        top: 15rem;
-        right: 9.5rem;
-        transform: rotate(180deg);
-        opacity: 1;
-        cursor: pointer;
-      }
-    }
   }
   &__right {
     display: flex;
@@ -55,7 +36,7 @@
       font-family: "Poppins", sans-serif;
       color: #627680;
       justify-content: center;
-      align-items: center; 
+      align-items: center;
     }
   }
 }
@@ -69,35 +50,22 @@
         width: 80%;
         margin-top: 82rem;
       }
-      .arrows {
-        display: flex;
-        position: relative;
-
-        &__left {
-          left: 50px;
-          top: 40rem;
-        }
-        &__right {
-          right: 29px;
-          top: 40rem;
-        }
-      }
     }
     &__right {
-        &__heading >p{
-            margin-top: 55rem;
-            font-size: 22px;
-            margin-left: 40px;
-            padding: 1rem;
-        }
-        &__header > h1 {
-            font-size: 32px;
-            margin-left: 40px;
-        }
-        &__text > h2{
-            margin-left: 40px;
-            font-size: 20px;
-        }
-    } 
+      &__heading > p {
+        margin-top: 55rem;
+        font-size: 22px;
+        margin-left: 40px;
+        padding: 1rem;
+      }
+      &__header > h1 {
+        font-size: 32px;
+        margin-left: 40px;
+      }
+      &__text > h2 {
+        margin-left: 40px;
+        font-size: 20px;
+      }
+    }
   }
 }

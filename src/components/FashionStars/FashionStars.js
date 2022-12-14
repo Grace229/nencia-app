@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { fashionStarImageData } from "./FashionStarData";
-import leftArrow from "../../assets/img/leftArrow.png";
 import "./FashionStars.scss";
 
 const FashionStars = () => {
-  const [selected, setSelected] = useState(0); 
+  const [selected] = useState(0); 
   
   return (
     <div className="fashion">
@@ -33,7 +32,7 @@ const FashionStars = () => {
         </div>
       </div>
     </div>
-  );
+  ); 
 };
 
 export default FashionStars;

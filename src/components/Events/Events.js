@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import "./Events.scss";
 import { eventImageData } from "./EventsData";
-import leftArrow from "../../assets/img/leftArrow.png";
 
 const Events = () => {
-  const [selected, setSelected] = useState(0);
-  const tLength = eventImageData.length;
+  const [selected] = useState(0);
+
   return (
     <div className="container">
       <div className="container__left">
@@ -36,28 +35,6 @@ const Events = () => {
           alt="EventImage"
           className="container__right__image"
         />
-        <div className="container__right__arrows">
-          <img
-            onClick={() => {
-              selected === 0
-                ? setSelected(tLength - 1)
-                : setSelected((prev) => prev - 1);
-            }}
-            src={leftArrow}
-            alt="left-arrow"
-            className="arrows__left"
-          />
-          <img
-            src={leftArrow}
-            onClick={() => {
-              selected === tLength - 1
-                ? setSelected(0)
-                : setSelected((prev) => prev + 1);
-            }}
-            alt="right-arrow"
-            className="arrows__right"
-          />
-        </div>
       </div>
     </div>
   );
