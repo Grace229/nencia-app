@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  flex-direction: column;
+
+  &__aboutHeader {
+    background-color: #f4f6f7;
+    width: 100%;
+    ol {
+      display: flex;
+      gap: 0.5rem;
+      list-style: none;
+      padding: 0px 0px 30px;
+      margin-left: 50px;
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: bold;
+
+      li > a {
+        display: flex;
+        text-decoration: none;
+        color: #1da1f2;
+      }
+    }
+    &__head {
+      margin-left: 50px;
+      margin-bottom: -px;
+    }
+  }
+}
