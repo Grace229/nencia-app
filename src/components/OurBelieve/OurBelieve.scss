@@ -1,0 +1,49 @@
+.ourBelieve {
+  display: flex;
+  margin-bottom: 9rem;
+  background-color: #f4f6f7;
+  padding: 5rem;
+  gap: -5rem;
+  &__left,
+  &__right {
+    width: 50%;
+  }
+  &__left {
+    &__image {
+      height: 280px;
+      width: 490px;
+      position: absolute;
+      border-radius: 10px;
+      left: 7rem;
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+    &__heading > p {
+      background-color: #fefaf1;
+      font-size: 2rem;
+      padding: 1rem;
+      width: 25%;
+      border-radius: 30px;
+    }
+    &__header > h1 {
+      font-family: Gilroy-Medium;
+      font-weight: 500;
+      font-size: 45px;
+      margin: 15px;
+    }
+    &__text > h2 {
+      font-size: 25px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      padding-bottom: 0;
+      font-family: "Poppins", sans-serif;
+      color: #627680;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
