@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { believeImageData } from "./ourBelieveData";
 import Typewriter from "typewriter-effect";
-import './OurBelieve.scss'
+import "./OurBelieve.scss";
 
 const OurBelieve = () => {
   const [selected] = useState(0);
@@ -12,7 +12,7 @@ const OurBelieve = () => {
           key={selected}
           src={believeImageData[selected].image}
           alt=""
-          className="ourBelieve__left__image"
+          className="ourBelieve__left__image"i
         />
       </div>
       <div className="ourBelieve__right">
