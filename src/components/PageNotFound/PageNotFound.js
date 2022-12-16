@@ -5,16 +5,20 @@ import dribble from "../../assets/img/dribbble_1.gif";
 
 const PageNotFound = () => {
   return (
-    <section class="page_404">
+    <section className="page_404">
       <div>
-        <img src={dribble} alt="404Page" />
+        <img
+          src={dribble}
+          alt="404Page"
+          className="imageClass"
+        />
       </div>
-      <div>
+      <div className="notFoundHeader">
         <h1>404</h1>
-        <h3 class="h2">Look like you're lost</h3>
+        <h3>Look like you're lost</h3>
         <p>the page you are looking for not available!</p>
 
-        <Link to="/" class="link_404">
+        <Link to="/" className="link_404">
           Go to Home
         </Link>
       </div>
