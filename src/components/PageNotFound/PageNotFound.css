@@ -1,0 +1,10 @@
+.page_404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link_404 {
+  background: #3189ac;
+}

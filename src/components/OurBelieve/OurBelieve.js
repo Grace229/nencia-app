@@ -12,7 +12,7 @@ const OurBelieve = () => {
           key={selected}
           src={believeImageData[selected].image}
           alt=""
-          className="ourBelieve__left__image"i
+          className="ourBelieve__left__image"
         />
       </div>
       <div className="ourBelieve__right">
