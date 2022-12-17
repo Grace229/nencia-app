@@ -1,10 +1,11 @@
 import React from 'react'
-import './Services.css'
+import './Services.scss'
+import ServicesHome from './ServicesHome/ServicesHome'
 
 const Services = () => {
   return (
     <div>
-      Services
+      <ServicesHome />
     </div>
   )
 }
