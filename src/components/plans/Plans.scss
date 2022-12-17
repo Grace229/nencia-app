@@ -53,3 +53,39 @@
     }
   }
 }
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    flex-direction: column;
+    &__container {
+      background: none;
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 5rem;
+      }
+      p {
+        margin: 2rem;
+        text-align: center;
+        font-size: 15px;
+        width: 70%;
+        color: #627680;
+      }
+    }
+    &__mission{
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: -5rem;
+      }
+      p{
+        font-size: 1.5rem;
+      }
+    }
+  }
+  
+}

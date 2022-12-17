@@ -14,7 +14,7 @@ const About = () => {
       <OurBelieve />
       <Goal />
       <Plans />
-      <Team />
+      <Team /> 
       <Footer />
     </div>
   )

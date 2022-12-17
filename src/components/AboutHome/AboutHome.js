@@ -6,7 +6,7 @@ const AboutHome = () => {
   return (
     <div className="main">
       <div className="main__aboutHeader">
-        <ol>
+        <ol> 
           <li>
             <Link to="/">Home</Link>
           </li>{" "}

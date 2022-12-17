@@ -13,23 +13,23 @@ const Team = () => {
   const teams = [
     {
       img: profile6,
-      name: "Godswill",
-      position: "CEO",
+      name: "Ibbie Eckart",
+      position: "Founder & CEO",
     },
     {
       img: profilePic2,
-      name: "Godswill",
-      position: "CEO",
+      name: "Arden Vasek",
+      position: "CFO",
     },
     {
       img: profilePic3,
-      name: "Godswill",
-      position: "CEO",
+      name: "Toribio Nerthus",
+      position: "Operations Manager",
     },
     {
       img: profilePic4,
-      name: "Godswill",
-      position: "CEO",
+      name: "Malvina Cilla",
+      position: "CTO",
     },
   ];
 

@@ -68,14 +68,37 @@
 .t-wrapper .swiper-pagination-bullet-active {
   background: #1da1f2;
 }
-
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 280px) and (max-width: 1080px) {
   .t-wrapper {
-    padding: 0;
+    margin-top: -5rem;
+    
   }
 
   .team-members > img {
     width: 70px;
     height: 70px;
+  }
+
+  .t-header > h1 {
+    font-size: 2rem;
+  }
+  .t-header > p{
+    font-size: 15px;
+    margin-top: 1rem;
+  }
+  .team-members {
+    width: 80%;
+    height: 50%;
+  }
+  .t-wrapper .swiper {
+    width: 100%;
+    height: 60%;
+  }
+
+  .team-members > h3, .team-members > h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
