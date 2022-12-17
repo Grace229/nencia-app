@@ -1,0 +1,33 @@
+/* MARQUEE SECTION */
+
+.marquee-section {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -100px;
+  }
+  
+  .marquee-container {
+    width: 100%;
+  }
+  
+  .marquee3k {
+    background-color: transparent;
+    height: 85px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .marquee3k h4 {
+    color: #1da1f2;
+    font-size: 23px;
+  }
+  .marquee3k h4 span {
+    margin: 0 30px;
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .marquee3k h4 {
+        color: #1da1f2;
+        font-size: 15px;
+      }
+  }
