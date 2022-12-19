@@ -10,6 +10,9 @@ import {
   FaBars,
 } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
+import { useScroll } from "../../useScroll";
+import { motion } from "framer-motion";
+import { navAnimation } from "../../animation";
 
 const data = [
   {
@@ -28,17 +31,30 @@ const data = [
 
 const Navbar = () => {
   const [toggleIcon, setToggleIcon] = useState(false);
+  const [element, controls] = useScroll();
 
   const handleToggle = () => {
     setToggleIcon(!toggleIcon);
   };
 
-  return (  
+  return (
     <div>
-      <nav className="navbar">
+      <motion.nav
+        ref={element}
+        variants={navAnimation}
+        transition={{ delay: 0.1 }}
+        animate={controls}
+        className="navbar"
+      >
         <div className="navbar__container">
           <Link to={"/"} className="navbar__container__logo">
-            <img src={logo_image} alt="logo" width="40" height="40" className="logo__img" />
+            <img
+              src={logo_image}
+              alt="logo"
+              width="40"
+              height="40"
+              className="logo__img"
+            />
             <h1>Nencia</h1>
           </Link>
         </div>
@@ -62,9 +78,9 @@ const Navbar = () => {
           <FaLinkedin />
         </div>
         <div className="nav-icon" onClick={handleToggle}>
-        {toggleIcon ? <HiX size={25} /> : <FaBars size={25} />}
+          {toggleIcon ? <HiX size={25} /> : <FaBars size={25} />}
         </div>
-      </nav>
+      </motion.nav>
     </div>
   );
 };

@@ -25,7 +25,7 @@ const ServicesHome = () => {
           melodies, the rhythm of her beats and laughter fill the global village
           square.
         </p>
-      </div>
+      </div> 
     </div>
   );
 };

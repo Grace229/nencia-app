@@ -1,13 +1,27 @@
 import React, { useState } from "react";
 import "./Events.scss";
 import { eventImageData } from "./EventsData";
+import { useScroll } from "../../useScroll";
+import { motion } from "framer-motion";
+import { homeAnimation, homeInfoAnimation } from "../../animation";
 
 const Events = () => {
   const [selected] = useState(0);
- 
+  const [element, controls] = useScroll();
+
   return (
     <div className="container">
-      <div className="container__left">
+      <motion.div
+        ref={element}
+        variants={homeAnimation}
+        animate={controls}
+        transition={{
+          delay: 0.03,
+          type: "tween",
+          duration: 0.8,
+        }}
+        className="container__left"
+      >
         <div className="container__left__heading">
           <p>Event</p>
         </div>
@@ -28,14 +42,20 @@ const Events = () => {
             transactions.
           </h2>
         </div>
-      </div>
-      <div className="container__right">
+      </motion.div>
+      <motion.div
+        ref={element}
+        animate={controls}
+        variants={homeInfoAnimation}
+        transition={{ delay: 0.3, duration: 0.5, type: "tween" }}
+        className="container__right"
+      >
         <img
           src={eventImageData[selected].image}
           alt="EventImage"
           className="container__right__image"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

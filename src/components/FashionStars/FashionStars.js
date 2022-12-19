@@ -1,18 +1,32 @@
 import React, { useState } from "react";
 import { fashionStarImageData } from "./FashionStarData";
 import "./FashionStars.scss";
+import { motion } from "framer-motion";
+import { useScroll } from "../../useScroll";
+import { fashionAnimations } from "../../animation";
 
 const FashionStars = () => {
-  const [selected] = useState(0); 
-  
+  const [selected] = useState(0);
+  const [element, controls] = useScroll();
+
   return (
-    <div className="fashion">
+    <motion.div
+      variants={fashionAnimations}
+      ref={element}
+      animate={controls}
+      transition={{
+        delay: 0.03,
+        type: "tween",
+        duration: 0.8,
+      }}
+      className="fashion"
+    >
       <div className="fashion__left">
         <img
           src={fashionStarImageData[selected].image}
           alt=""
           className="fashion__left__image"
-        /> 
+        />
       </div>
       <div className="fashion__right">
         <div className="fashion__right__heading">
@@ -31,8 +45,8 @@ const FashionStars = () => {
           </h2>
         </div>
       </div>
-    </div>
-  ); 
+    </motion.div>
+  );
 };
 
 export default FashionStars;

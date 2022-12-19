@@ -1,12 +1,32 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaSkype, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaSkype,
+  FaTwitter,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Footer.scss";
+import { useScroll } from "../../useScroll";
+import { motion } from "framer-motion";
+import { footerTextAnimation } from "../../animation";
 
 const Footer = () => {
+  const [element, controls] = useScroll();
   return (
     <div className="footer">
-      <div className="footer__container">
+      <motion.div
+        ref={element}
+        variants={footerTextAnimation}
+        animate={controls}
+        transition={{
+          delay: 0.03,
+          type: "tween",
+          duration: 0.8,
+        }}
+        className="footer__container"
+      >
         <div className="footer__container__info">
           <h3>Nencia</h3>
           <p>
@@ -48,21 +68,41 @@ const Footer = () => {
         <div className="footer__container__social">
           <h4>Follow us</h4>
           <div className="footer__container__social__media">
-            <Link><FaTwitter /></Link>
-            <Link><FaFacebookF /></Link>
-            <Link><FaInstagram /></Link>
-            <Link><FaSkype /></Link>
-            <Link><FaLinkedinIn /></Link>
+            <Link>
+              <FaTwitter />
+            </Link>
+            <Link>
+              <FaFacebookF />
+            </Link>
+            <Link>
+              <FaInstagram />
+            </Link>
+            <Link>
+              <FaSkype />
+            </Link>
+            <Link>
+              <FaLinkedinIn />
+            </Link>
           </div>
         </div>
-      </div>
-      <div className="footer__copyright">
+      </motion.div>
+      <motion.div
+        ref={element}
+        variants={footerTextAnimation}
+        animate={controls}
+        transition={{
+          delay: 0.03,
+          type: "tween",
+          duration: 0.8,
+        }}
+        className="footer__copyright"
+      >
         Copyright &copy; 2022{" "}
         <strong>
           <span>Nencia</span>
         </strong>
-         All Rights Reserved
-      </div>
+        All Rights Reserved
+      </motion.div>
     </div>
   );
 };

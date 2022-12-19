@@ -58,3 +58,30 @@
     }
   }
 }
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    &__servicesHome, &__believe{
+      width: 100%;
+    }
+    &__believe {
+      margin-top: -4rem;
+      h1 {
+        font-family: "Raleway", sans-serif;
+        font-size: 1.2rem;
+      }
+      p {
+        text-align: center;
+        --bs-text-opacity: 1;
+        color: #6c757d !important;
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: -25px;
+
+      } 
+    }
+  }
+}
