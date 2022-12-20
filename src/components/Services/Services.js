@@ -1,10 +1,18 @@
 import React from 'react'
-import './Services.css'
+import ServiceInclude from './serviceInclude/ServiceInclude'
+import './Services.scss'
+import ServicesHome from './ServicesHome/ServicesHome'
+import Cta from '../../components/cta/Cta'
+import Footer from '../../components/footer/Footer'
+
 
 const Services = () => {
   return (
-    <div>
-      Services
+    <div className='Services'>
+      <ServicesHome />
+      <ServiceInclude />
+       <Cta />
+      <Footer /> 
     </div>
   )
 }

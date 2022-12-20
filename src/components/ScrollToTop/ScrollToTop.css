@@ -1,0 +1,27 @@
+.ScrollToTop {
+  max-width: 100vw;
+}
+.none {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ScrollToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: 0.4s ease-in-out;
+}
+.ScrollToTopIcon {
+  background: #1da1f2;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 1rem;
+
+  border-radius: 100%;
+}

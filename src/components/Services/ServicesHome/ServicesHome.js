@@ -1,33 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./AboutHome.scss";
+import './ServicesHome.scss'
 
-const AboutHome = () => {
+const ServicesHome = () => {
   return (
-    <div className="main">
-      <div className="main__aboutHeader">
-        <ol> 
+    <div className="section">
+      <div className="section__servicesHome">
+        <ol>
           <li>
             <Link to="/">Home</Link>
           </li>{" "}
-          /<li>About</li>
+          /<li>Services</li>
         </ol>
-        <h2 className="main__aboutHeader__head">About Us</h2>
+        <h2 className="section__servicesHome__head">Services</h2>
       </div>
-      <div className="main__believe">
+      <div className="section__believe">
         <h1>
-          We believe the world would one day be clothed in all the colors of
-          African fashion and feel the comfort of its soothing embrace.
+          We offer a variety of services that can help your brand reach its full
+          potential.
         </h1>
         <p>
           Africa, the colorful continent radiates warmth and opens her heart to
           the world through music, movies and entertainment. The world sings her
           melodies, the rhythm of her beats and laughter fill the global village
           square.
-        </p> 
-      </div>
+        </p>
+      </div> 
     </div>
   );
 };
 
-export default AboutHome;
+export default ServicesHome;

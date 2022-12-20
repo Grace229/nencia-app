@@ -15,7 +15,13 @@ const Home = () => {
   return (
     <main>
       <div className="container">
-        <div className="container__left">
+        <motion.div
+          initial={{ opacity: 0, x: -400 }}
+          transition={transition}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 1, x: -100 }}
+          className="container__left"
+        >
           <div className="container__left__name">
             <span>All the</span>
             <span>COLOURS</span>
@@ -44,7 +50,7 @@ const Home = () => {
               />
             </Link>
           </div>
-        </div>
+        </motion.div>
         <div className="container__right">
           <motion.div
             initial={{ opacity: 0, x: 100 }}
