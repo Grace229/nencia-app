@@ -27,6 +27,10 @@ const data = [
     label: "SERVICES",
     to: "/services",
   },
+  {
+    label: "EVENTS",
+    to: "/landingpage",
+  },
 ];
 
 const Navbar = () => {
