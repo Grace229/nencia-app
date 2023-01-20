@@ -27,21 +27,25 @@ const Sizechart = () => {
       </div>
       <div className=' w-[70%] mt-10  m-auto md:w-[60%] '>
       <div className='grid gap-y-10 md:grid-cols-3 gap-x-12 '>
-        <div className='hover:border border-cyan-400'>
+      <Link to='/ownerhomeone'><div className='hover:border border-cyan-400'>
           <img src={Brown} alt="pic" className='w-[300px] '/>
           <p className='mt-3 flex justify-center font-bold '>A</p>
           <p className='mt-3 flex justify-center font-bold md:mt-3'>{firstPrice}</p>
         </div>
-        <div className='hover:border border-cyan-400 '>
+        </Link>
+        <Link to='/ownerhometwo'><div className='hover:border border-cyan-400 '>
         <img src={Browntwo} alt="pic" className='w-[300px] ' />
         <p className='mt-3 flex justify-center font-bold '>B</p>
         <p className='mt-3 flex justify-center font-bold  md:mt-3'>{secondPrice}</p>
         </div>
-        <div className='hover:border border-cyan-400'>
+        </Link>
+
+        <Link to='/ownerhomethree'><div className='hover:border border-cyan-400'>
         <img src={Brownthree} alt="pic" className='w-[300px] ' />
         <p className='mt-3 flex justify-center font-bold md:mt-5'>C</p>
         <p className='mt-3 flex justify-center font-bold md:mt-3'>{thirdPrice}</p>
         </div>
+        </Link>
       </div>
       </div>
       <div className='flex justify-between items-center px-10 h-[300px] mt-[-90px] md:mt-[-80px] '>

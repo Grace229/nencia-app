@@ -11,18 +11,21 @@ const DotPop = () => {
     <div className='p-10 bg-slate-300 h-full'>
       <div className='bg-white h-screen md:w-[60%] m-auto'>
         <div className='border border-black py-10 px-5'>
-          <div className='flex justify-start items-center  gap-x-2'>
+        <Link to='/dashboard'><div className='flex justify-start items-center  gap-x-2 hover:text-cyan-400'>
             <img src={Dash} alt="pic" className='bg-cyan-400 w-7' />
-            <Link to='/'><p className='cursor-pointer'>Dashboard</p></Link>
+            <p className='cursor-pointer'>Dashboard</p>
           </div>
-          <div className='flex justify-start items-center mt-10 gap-x-2'>
+          </Link>
+          <Link to='/accdetails'><div className='flex justify-start items-center mt-10 gap-x-2 hover:text-cyan-400'>
           <img src={Share} alt="pic" className=' w-7' />
-            <p className='cursor-pointer'>Share Links to friends</p>
+          <p className='cursor-pointer'>Share Links to friends</p>
           </div>
-          <div className='flex justify-start items-center mt-10 gap-x-2'>
+          </Link>
+          <Link to='/sharelink'><div className='flex justify-start items-center mt-10 gap-x-2 hover:text-cyan-400'>
           <img src={Acc} alt="pic" className=' w-7' />
             <p className='cursor-pointer'>Bank Account Details</p>
           </div>
+          </Link>
         </div>
         <div className=' md:w-[60%]  mt-40 flex justify-center items-center m-auto'>
          <p className='text-xl font-bold'>{feedback}</p>

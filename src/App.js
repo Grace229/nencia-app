@@ -20,6 +20,14 @@ import Payment from "./components/MainEvent/Payment/Payment";
 import DotPop from "./components/MainEvent/Dotpop/DotPop";
 import EventOwnerpage from "./components/MainEvent/Ownerpage/EventOwnerpage";
 import Sizechart from "./components/MainEvent/Ownerpage/Sizechart";
+import Ownerhomeone from "./components/MainEvent/Ownerhome/Ownerhomeone";
+import Ownerhometwo from "./components/MainEvent/Ownerhome/Ownerhometwo";
+import Ownerhomethree from "./components/MainEvent/Ownerhome/Ownerhomethree";
+import Orderpayment from "./components/MainEvent/Payment/Orderpayment";
+import Finalpayment from "./components/MainEvent/Payment/Finalpayment";
+import Dashboard from "./components/MainEvent/Dotpop/Dashboard";
+import Sharelink from "./components/MainEvent/Dotpop/Sharelink";
+import Accdetails from "./components/MainEvent/Dotpop/Accdetails";
 
 function App() {
   const location = useLocation();
@@ -51,6 +59,14 @@ function App() {
         <Route path="/dotpop" element={<DotPop />} />
         <Route path="/eventownerpage" element={<EventOwnerpage />} />
         <Route path="/sizechart" element={<Sizechart />} />
+        <Route path="/ownerhomeone" element={<Ownerhomeone />} />
+        <Route path="/ownerhometwo" element={<Ownerhometwo />} />
+        <Route path="/ownerhomethree" element={<Ownerhomethree />} />
+        <Route path="/orderpayment" element={<Orderpayment />} />
+        <Route path="/finalpayment" element={<Finalpayment />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/sharelink" element={<Sharelink />} />
+        <Route path="/accdetails" element={<Accdetails />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       {/* <Footer /> */}
