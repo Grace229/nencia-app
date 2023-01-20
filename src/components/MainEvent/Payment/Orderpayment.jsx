@@ -6,7 +6,7 @@ const Orderpayment = () => {
   const note = 'The Amount for your dress to this event is N90,000.'
   const moreNote = 'You can go above the minimum to support your firend. All contribution goes to the event owner directly!'
   return (
-    <div className='h-[200vh] p-10 md: h-[185vh]'>
+    <div className='h-[160vh] p-10 md:h-[185vh]'>
       <div>
       <div className='flex justify-between items-center'>
         <p className='text-xl md:text-3xl font-bold'>{Title}</p>
@@ -47,9 +47,9 @@ const Orderpayment = () => {
           <div className='mt-10 flex justify-center items-center'>
             <p><span className='font-bold '>Make a donation:</span>You can add your donation to the amount stated above</p>
           </div>
-          <div className=':w-[400px] h-[100px] md:w-[700px] h-[200px] drop-shadow-md bg-white m-auto flex justify-between items-center p-5 mt-5'>
-           <Link to='/finalpayment'><button className='border border-cyan-400 px-8 py-3 mb-4 '>Enter Amount</button></Link>
-           <Link to='/finalpayment'><button className='border bg-cyan-400 px-16 py-3 mb-4 rounded-xl'>Pay</button></Link>
+          <div className=':w-[400px] h-[100px] md:w-[700px] h-[150px] drop-shadow-md bg-white m-auto flex justify-between items-center p-5 mt-5'>
+           <Link to='/finalpayment'><button className='border border-cyan-400  p-2 mb-4 md:px-8 py-3 mb-4 '>Enter Amount</button></Link>
+           <Link to='/finalpayment'><button className='border bg-cyan-400 px-10 py-3 mb-4 md:px-16 py-3 mb-4 rounded-xl'>Pay</button></Link>
           </div>
         </div>
       </div>

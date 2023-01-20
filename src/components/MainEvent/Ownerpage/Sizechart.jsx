@@ -16,7 +16,7 @@ const Sizechart = () => {
   const secondPrice = 'N65,000'
   const thirdPrice = 'N80,000'
   return (
-    <div className='p-10 h-[2000px] ' >
+    <div className='p-10 h-full' >
      <div>
       <div className='flex justify-between items-center'>
         <p className='text-xl md:text-3xl font-bold'>{Title}</p>
@@ -48,7 +48,7 @@ const Sizechart = () => {
         </Link>
       </div>
       </div>
-      <div className='flex justify-between items-center px-10 h-[300px] mt-[-90px] md:mt-[-80px] '>
+      <div className='flex justify-around items-center  h-[250px] mt-[10px] '>
         <div className='flex justify-start items-center gap-x-3 md:gap-x-5'>
         <label>
           Select Size
@@ -67,7 +67,7 @@ const Sizechart = () => {
         </div>
         
       </div>
-      <div className='h-[400px] mt-[-80px]'>
+      <div className='h-[240px] mt-[-80px] md:h-[450px]'>
           <div className='flex justify-center items-center text-4xl '>
             <p>Size Chart</p>
           </div>

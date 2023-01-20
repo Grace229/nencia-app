@@ -30,7 +30,7 @@ const Payment = () => {
         </div>
 
         <div className='flex justify-center md:justify-center pl-4 font-bold'>
-        <Link to='/eventownerpage'><button className='border bg-cyan-500 rounded-lg  px-48 py-2 mt-10   md:mt-20 text-white'>Pay
+        <Link to='/eventownerpage'><button className='border bg-cyan-500 rounded-lg  px-12 py-2 mt-10   md:mt-20 px-12 text-white'>Pay
         </button></Link>
         </div>
       

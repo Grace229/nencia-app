@@ -11,10 +11,10 @@ const Create = () => {
         </div>
       <div className='block md:flex justify-center items-center'>
         <div className=' m-auto mt-10'>
-          <button className='border border-black flex justify-center items-center w-[350px] font-bold  md:w-[450px] h-[50px]'>Fashion Theme Title</button>
-          <button className='border border-black flex justify-center items-center w-[350px] font-bold md:w-[450px] h-[50px] mt-5'>Event Location</button>
-          <button className='border border-black flex justify-center items-center w-[350px] font-bold md:w-[450px] h-[50px]  mt-5'>Event Date</button>
-          <button className='border border-black flex justify-center items-center w-[350px] font-bold md:w-[450px] h-[50px]  mt-5'>Event Colours</button>
+          <button className='border border-black flex justify-center items-center w-[350px] font-bold w-[100%] md:w-[450px] h-[50px]'>Fashion Theme Title</button>
+          <button className='border border-black flex justify-center items-center w-[350px] font-bold w-[100%] md:w-[450px] h-[50px] mt-5'>Event Location</button>
+          <button className='border border-black flex justify-center items-center w-[350px] font-bold w-[100%] md:w-[450px] h-[50px]  mt-5'>Event Date</button>
+          <button className='border border-black flex justify-center items-center w-[350px] font-bold w-[100%] md:w-[450px] h-[50px]  mt-5'>Event Colours</button>
         </div>
       </div>
       <div className='flex justify-center md:justify-center pl-4 font-bold'>

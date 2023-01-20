@@ -15,7 +15,7 @@ const Ownerhomethree = () => {
   const moreNote = 'To ensure your dress is made to fit, our design team will be in touch with you within 2 days to customize your measurement after paymet is made. Please note, only the event owner can request for change of design.'
   
   return (
-    <div className='px-20 p-10 h-[130vh] md:h-[200vh]'>
+    <div className='px-20 p-10 h-[100vh] md:h-[190vh]'>
     <div>
     <div className='flex justify-between items-center'>
       <p className='text-xl md:text-3xl font-bold'>{Title}</p>

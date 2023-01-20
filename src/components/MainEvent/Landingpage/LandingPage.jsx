@@ -14,9 +14,8 @@ const LandingPage = () => {
   return (
     <div className=''>
       <div className='p-10  border-b-2 border-zinc-400 w-full'>
-      <div className=''>
-        <span className='text-xl md:text-3xl flex justify-center font-bold'>Make a fashion statement</span>
-        <span className='text-xl mt-2 md:text-3xl flex justify-center font-bold'>on your wedding day.</span>
+      <div className='flex justify-center items-center'>
+        <p className='text-xl md:text-3xl font-bold  gap-x-2'>Make a <span className='text-cyan-400'>fashion statement</span> on your wedding day</p>
         </div>
 
         <div className='block md:flex justify-between mt-10 font-bold'>

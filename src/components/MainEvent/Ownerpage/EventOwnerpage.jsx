@@ -14,7 +14,7 @@ const EventOwnerpage = () => {
   const secondPrice = 'N65,000'
   const thirdPrice = 'N80,000'
   return (
-    <div className='p-10 h-screen ' >
+    <div className='p-10 h-[190vh] md:h-[220vh]' >
      <div>
       <div className='flex justify-between items-center'>
         <p className='text-xl md:text-3xl font-bold'>{Title}</p>
@@ -46,7 +46,8 @@ const EventOwnerpage = () => {
         </Link>
       </div>
       </div>
-      <div className='flex justify-between items-center px-10 h-[300px] mt-[-90px]'>
+      <div className='flex justify-around items-center  h-[250px] mt-[10px] '>
+        
         <div className='flex justify-start items-center gap-x-3 md:gap-x-5'>
         <label>
           Select Size
@@ -60,9 +61,10 @@ const EventOwnerpage = () => {
            </select>
            
         </div>
-        <div>
+        <div className=''>
           <Link to='/sizechart'><p className='text-cyan-400'>See Size Charts</p></Link>
         </div>
+        
       </div>
      </div>
     </div>
