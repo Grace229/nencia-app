@@ -1,7 +1,47 @@
-import React from 'react'
+
+import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 
 const Finalpayment = () => {
+  const initialValues = { email: "",  fullAddress: "", amount: "" };
+  const [formValues, setFormValues] = useState(initialValues);
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFormErrors(validate(formValues));
+    setIsSubmit(true);
+  };
+
+  useEffect(() => {
+    console.log(formErrors);
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      console.log(formValues);
+    }
+  }, [formErrors]);
+  const validate = (values) => {
+    const errors = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    
+    if (!values.email) {
+      errors.email = "Email is required!";
+    } else if (!regex.test(values.email)) {
+      errors.email = "This is not a valid email format!";
+    }
+    if (!values.amount) {
+      errors.amount = "Amount is required!";
+    }
+    if (!values.fullAddress) {
+      errors.fullAddress = "Address is required! ";
+    } 
+    return errors;
+  };
   const Title = 'Jennifer Theme Wedding'
   const name = 'Nancy Roberts'
   const mail = 'nancy@gmail.com'
@@ -41,8 +81,8 @@ const Finalpayment = () => {
           </div>
         </div>
         <div className='flex justify-center md:justify-center pl-4 font-bold '>
-        <Link to='/orderpayment'><button className='border bg-cyan-500 rounded-lg  px-8 py-2 mt-10   md:mt-15 text-white'>Pay
-        </button></Link>
+        <button className='border bg-cyan-500 rounded-lg  px-8 py-2 mt-10   md:mt-15 text-white'>Pay
+        </button>
         </div>
       </div>
       </div>
