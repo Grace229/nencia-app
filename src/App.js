@@ -32,21 +32,21 @@ import Accdetails from "./components/MainEvent/Dotpop/Accdetails";
 function App() {
   const location = useLocation();
   console.log(location);
-  const renderParticleJSInHomePage = location.pathname === "/";
+  // const renderParticleJSInHomePage = location.pathname === "/";
   const handleInit = async (main) => {
     await loadFull(main);
   };
   return (
     <div className="App">
       {/* Particles js */}
-      {renderParticleJSInHomePage && (
+      {/* {renderParticleJSInHomePage && (
         <Particles id="particles" options={particles} init={handleInit} />
-      )}
+      )} */}
       {/* NavBar */}
       <Navbar />
       {/* Main Page Content */}
       <Routes>
-        <Route index path="/" element={<HomeSection />} />
+        <Route index path="/" element={<LandingPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/landingpage" element={<LandingPage />} />
