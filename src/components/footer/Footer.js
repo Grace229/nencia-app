@@ -31,7 +31,7 @@ const Footer = () => {
           <h3>Nencia</h3>
           <p>
             <strong>Phone:</strong> 09025977376 <br />
-            <strong>Email:</strong> care@nencia.com
+            <strong>Email:</strong>  <a href="mailto:care@nencia.ng">care@nencia.ng</a>
             <br />
           </p>
         </div>
@@ -39,10 +39,10 @@ const Footer = () => {
           <h4>Useful Links</h4>
           <ul className="footer__container__links__unordered">
             <li>
-              <Link href="#">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link href="#">About us</Link>
+              <Link href="/about">About us</Link>
             </li>
             <li>
               <Link href="#">Careers</Link>
@@ -57,11 +57,11 @@ const Footer = () => {
             </li>
             <li>
               {" "}
-              <Link href="#">Terms and Conditions </Link>
+              <Link to="/terms">Terms and Conditions </Link>
             </li>
             <li>
               {" "}
-              <Link href="#">Privacy policy</Link>
+              <Link to="/privacy">Privacy policy</Link>
             </li>
           </ul>
         </div>
@@ -99,7 +99,7 @@ const Footer = () => {
       >
         Copyright &copy; 2022{" "}
         <strong>
-          <span>Nencia</span>
+          <span className="mx-4">Nencia</span>
         </strong>
         All Rights Reserved
       </motion.div>

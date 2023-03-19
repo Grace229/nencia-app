@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
@@ -9,9 +9,9 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import LandingPage from "./components/MainEvent/Landingpage/LandingPage";
 import ReadMorewed from "./components/MainEvent/Readwedding/ReadMorewed";
 // import Footer from "./components/footer/Footer";
-import Particles from "react-tsparticles";
-import particles from "./utils.js/particles";
-import { loadFull } from "tsparticles";
+// import Particles from "react-tsparticles";
+// import particles from "./utils.js/particles";
+// import { loadFull } from "tsparticles";
 import ReadMoreFashion from "./components/MainEvent/Readmorefashion/ReadMoreFashion";
 import SignIn from "./components/MainEvent/SignIn/SignIn";
 import SignUp from "./components/MainEvent/SignUp/Signup";
@@ -28,14 +28,13 @@ import Finalpayment from "./components/MainEvent/Payment/Finalpayment";
 import Dashboard from "./components/MainEvent/Dotpop/Dashboard";
 import Sharelink from "./components/MainEvent/Dotpop/Sharelink";
 import Accdetails from "./components/MainEvent/Dotpop/Accdetails";
+import Privacy from "./components/Privacy/Privacy";
+import Terms from "./components/Terms/Terms";
+
+
 
 function App() {
-  const location = useLocation();
-  console.log(location);
   // const renderParticleJSInHomePage = location.pathname === "/";
-  const handleInit = async (main) => {
-    await loadFull(main);
-  };
   return (
     <div className="App">
       {/* Particles js */}
@@ -67,6 +66,8 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/sharelink" element={<Sharelink />} />
         <Route path="/accdetails" element={<Accdetails />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       {/* <Footer /> */}

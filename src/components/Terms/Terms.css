@@ -1,0 +1,40 @@
+@font-face
+{font-family:Wingdings;
+panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+{font-family:SimSun;
+panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+{font-family:"Cambria Math";
+panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+{font-family:"\@SimSun";
+panose-1:2 1 6 0 3 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+{margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+{margin-bottom:10.0pt;
+line-height:115%;}
+@page WordSection1
+{size:595.0pt 842.0pt;
+margin:.5in .8in .5in .8in;}
+div.WordSection1
+{page:WordSection1;}
+/* List Definitions */
+ol
+{margin-bottom:0in;}
+ul
+{margin-bottom:0in;}
+.WordSection1{
+    width: 80%;
+    margin: 0 auto;
+}
